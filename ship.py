@@ -25,7 +25,7 @@ class Ship():
 
     def center_ship(self):
         self.rect.midbottom = self.screen_rect.midbottom
-        self.rect.y = self.screen_rect.y
+        self.rect.y = self.screen_rect.bottom - self.rect.height
         self.x = float(self.rect.x)
         self.y = float(self.rect.y)
 
